@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/coordinatorLayout"
+android:fitsSystemWindows="true"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/appBarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--  <include
+          layout="@layout/include_toolbar" /> -->
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|snap" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_toolbar"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:tabIndicatorColor="@color/colorMediumDarkX"
+        app:tabIndicatorFullWidth="false"
+        app:tabRippleColor="@color/colorHighLightX"
+        app:tabSelectedTextColor="@color/colorMediumDarkX"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabTextColor="@color/colorLowDarkX">
+
+    </com.google.android.material.tabs.TabLayout>
+</com.google.android.material.appbar.AppBarLayout>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <!-- <include layout="@layout/appbar_activity_personalize" /> -->
+    <!--  <include
+          layout="@layout/include_toolbar" /> -->
+
+    <!--<com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_toolbar"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:tabIndicatorColor="@color/colorMediumDarkX"
+        app:tabIndicatorFullWidth="false"
+        app:tabRippleColor="@color/colorHighLightX"
+        app:tabSelectedTextColor="@color/colorMediumDarkX"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabTextColor="@color/colorLowDarkX" /> -->
+
+    <!--  <androidx.viewpager.widget.ViewPager
+          android:id="@+id/view_pager"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_below="@id/tabs"
+          android:background="@color/colorHighLightY"
+          app:layout_behavior="@string/appbar_scrolling_view_behavior" /> -->
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.ProductDetailsActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorHighLightY"
+    android:orientation="vertical"
+    >
+   <!-- <include layout="@layout/appbar_activity_designer_details" /> -->
+
+    <include layout="@layout/include_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/include_toolbar"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_item"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image_blazer" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/view_page_designer"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabDots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    app:tabBackground="@drawable/tab_selector"
+                    app:tabGravity="center"
+                    app:tabIndicatorHeight="0dp" />
+
+            </FrameLayout>
+            <LinearLayout
+                android:id="@+id/layout_banner_select"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/banner_gradient"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:background="@drawable/tap"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:text="Select Design "
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_arrow_forward_black_24dp"
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:background="@drawable/agenda"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:text="Book Appointment "
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10sp" />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_arrow_forward_black_24dp"
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:background="@drawable/like"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:text="Confirm Design"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10sp" />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_arrow_forward_black_24dp"
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:background="@drawable/confirm"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tv_book_appointment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:text="Place Order"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"
+                android:text="Men Black and Grey hood t shirt "
+                android:textColor="@color/colorLowDarkX"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:id="@+id/design_cost"
+                android:text="Design Cost : Rs 15000  "
+                android:textColor="@color/colorLowDarkX"
+                android:textSize="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:id="@+id/price_alert"
+                android:text="(Prices may vary in case of extra changes in style) "
+                android:textColor="@color/colorLowDarkX"
+                android:layout_marginBottom="10dp"
+                android:textSize="12dp" />
+         <!-- This is booking appointment layout
+           <RadioGroup
+                android:visibility="gone"
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="8dp">
+                <RadioButton
+                    android:id="@+id/radio_btn_book_call"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorLowLightX"
+                    android:text="Would you like to receive a call back form our professional."
+                    android:textColor="@color/colorPink"
+                    android:textSize="12dp"
+                    android:textStyle="italic" />
+                <RadioButton
+                    android:id="@+id/radio_btn_book_appointment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorLowLightX"
+                    android:text="Would you like our designers to visit your location."
+                    android:textColor="@color/colorPink"
+                    android:textSize="12dp"
+                    android:textStyle="italic" />
+            </RadioGroup> -->
+
+    <!--    THis is product sizes
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+             android:layout_margin="5dp"
+            app:cardElevation="6dp"
+            android:visibility="gone"
+            app:cardCornerRadius="6dp"
+            android:layout_height="100dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:text="Select Size"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:text="Size Chart"
+                        android:textSize="16sp"
+                        android:gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_margin="10dp"
+                    android:visibility="gone"
+                    android:id="@+id/recycler_select_size"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView> -->
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="6dp"
+            android:layout_margin="5dp"
+            app:cardElevation="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/product_details_heading"
+                    android:layout_height="wrap_content"
+                    android:text="Product Description"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorBlack"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/product_details"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:textColor="@color/colorGrey"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="6dp"
+                android:layout_margin="5dp"
+                app:cardElevation="6dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_material_heading"
+                        android:text="Product Material "
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_material"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textColor="@color/colorGrey"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_category_heading"
+                        android:text="Product Category "
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_category"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textColor="@color/colorGrey"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/product_sleeve_heading"
+                        android:layout_height="wrap_content"
+                        android:text="Product Sleeve "
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_sleeve"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textColor="@color/colorGrey"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_ideal_for_heading"
+                        android:text="Ideal For "
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_ideal_for"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textColor="@color/colorGrey"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_suitable_for_heading"
+                        android:text="Suitable For "
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_suitable_for"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textColor="@color/colorGrey"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_pattern_heading"
+                        android:text="Pattern"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_pattern"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textColor="@color/colorGrey"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_type_heading"
+                        android:text="Product Type"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_type"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textColor="@color/colorGrey"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_pack_of_heading"
+                        android:text="Product Pack of"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_pack_of"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textColor="@color/colorGrey"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_occasion_heading"
+                        android:text="Occasion"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_occasion"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textColor="@color/colorGrey"/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fabric"
+                        android:id="@+id/product_fabric_heading"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/product_fabric"
+                        android:text=""
+                        android:textSize="16sp"
+                        android:textColor="@color/colorGrey"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include
+        android:id="@+id/layout_buttons"
+        layout="@layout/footer_product_details"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true" />
+
+
+</LinearLayout>
+
+    <FrameLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/activity_details_progressBar">
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+</RelativeLayout>

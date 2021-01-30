@@ -1,0 +1,20 @@
+$(document).ready(function () {
+  $('#dtBasicExample').DataTable();
+  $('.dataTables_length').addClass('bs-select');
+});
+
+function getPendingAppointments(){
+	
+}
+
+function loadPendingApntData(pendingApntData){
+	
+	const tableBody = document.getElementById('pendingApntmtTbody_id');
+	let dataHtml = '';
+	
+	for(let pData of pendingApntData){
+		dataHtml += '';
+	}
+	
+	 
+}

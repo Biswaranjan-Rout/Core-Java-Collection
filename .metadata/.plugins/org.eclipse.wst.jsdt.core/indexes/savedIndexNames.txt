@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\New_amai\Workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2448184695.index
+312743497.index
+4120456530.index
+191895129.index
+3084207108.index
+680805533.index

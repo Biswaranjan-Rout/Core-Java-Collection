@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.PersonalizeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:clipToPadding="true"
+        android:nestedScrollingEnabled="true"
+        android:id="@+id/boutiques_gridview"
+        android:layout_marginBottom="42dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_results_personlize"
+            android:layout_width="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+      <!--  <GridView
+                android:id="@+id/recycler_results"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:columnWidth="140dp"
+                android:layout_marginBottom="45dp"
+                android:gravity="center"
+                android:horizontalSpacing="4dp"
+                android:numColumns="auto_fit"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="vertical"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="4dp" >
+            </GridView>-->
+
+    </ScrollView>
+
+   <!-- <include
+        android:id="@+id/layout_error"
+        layout="@layout/a_error_layout"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_width="match_parent" />
+
+    <include
+        android:id="@+id/layout_no_post"
+        layout="@layout/a_no_post_layout"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+ -->
+    <include
+        layout="@layout/footer_activity_results"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp" />
+
+
+
+    <FrameLayout
+        android:id="@+id/personalise_progressbar"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="70dp"
+            android:text="Loading"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:text="Please Wait..."
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+    </FrameLayout>
+
+</RelativeLayout>

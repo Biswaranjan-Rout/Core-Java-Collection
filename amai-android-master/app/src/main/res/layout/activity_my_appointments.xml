@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".activity.ActivityMyAppointments">
+
+<include layout="@layout/include_toolbar" />
+
+<!--   <include layout="@layout/appbar_activity_my_wishlist" /> -->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs_my_appoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_toolbar"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        app:tabIndicatorColor="@color/colorMediumDarkX"
+        app:tabIndicatorFullWidth="false"
+        app:tabRippleColor="@color/colorHighLightX"
+        app:tabSelectedTextColor="@color/colorMediumDarkX"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabTextColor="@color/colorLowDarkX">
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+<androidx.viewpager.widget.ViewPager
+    android:id="@+id/view_pager_my_appoint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/tabs"
+    android:background="@color/colorHighLightY"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</LinearLayout>

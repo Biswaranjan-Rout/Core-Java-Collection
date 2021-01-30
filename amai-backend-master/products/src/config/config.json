@@ -1,0 +1,28 @@
+
+{
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "amai_products",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "amai_products",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "development": {
+    "username": "sujeet",
+    "password": "password",
+    "database": "amai_products",
+    "host_": "amai-web.antino.io",
+    "host":"ec2-3-136-240-99.us-east-2.compute.amazonaws.com",
+    "dialect": "mysql"
+  }
+}
+
+
+

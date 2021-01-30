@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="05dp"
+
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:id="@+id/layout_wishlist"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_gradient"
+            android:clickable="true"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/layout_wishlist_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Add to Wishlist"
+                android:textColor="@color/colorWhite"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+            <LinearLayout
+            android:id="@+id/layout_bag"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_gradient"
+            android:clickable="true"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/layout_bag_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Add to Bag"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+       <!-- <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="6dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:id="@+id/layout_sort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_primary_grey"
+            android:clickable="true"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_book_appointment"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/add_to_cart"
+                android:textAllCaps="true"
+                android:textColor="@color/colorMediumDarkX"
+                android:textSize="14dp" />
+        </LinearLayout>
+-->
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

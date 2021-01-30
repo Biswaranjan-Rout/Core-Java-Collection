@@ -1,0 +1,27 @@
+version: '3'
+services:
+  users:
+    build: './users'
+    ports:
+      - '4001:3000'
+    volumes:
+      - './users:/src/'
+  products:
+    build: './products'
+    ports:
+      - '4002:3000'
+    volumes:
+      - './products:/src/'
+  orders:
+    build: './orders'
+    ports:
+      - '4003:3000'
+    volumes:
+      - './orders:/src/'
+  payments:
+    build: './payments'
+    ports: 
+      - '4004:3000'
+    volumes: 
+      - './payments:/src/'
+

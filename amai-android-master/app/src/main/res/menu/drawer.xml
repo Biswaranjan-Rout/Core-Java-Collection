@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/drawer_women"
+            android:checked="false"
+            android:padding="4dp"
+            android:icon="@drawable/image_cloth_women"
+            android:title="@string/menu_women" />
+
+        <item
+            android:id="@+id/drawer_men"
+            android:checked="false"
+            android:icon="@drawable/image_cloth_men"
+            android:title="@string/menu_men" />
+
+        <item
+            android:id="@+id/drawer_kids"
+            android:checked="false"
+            android:icon="@drawable/image_cloth_kids"
+            android:title="@string/menu_kids" />
+
+    </group>
+    <group android:id="@+id/grp1" android:checkableBehavior="single" >
+
+        <item
+            android:id="@+id/drawer_my_designs"
+            android:checked="false"
+            android:icon="@drawable/ic_action_dress"
+            android:title="@string/menu_my_designs" />
+
+
+        <item
+            android:id="@+id/drawer_appointments"
+            android:checked="false"
+            android:icon="@drawable/ic_action_icon"
+            android:title="@string/menu_my_appointments" />
+        <item
+            android:id="@+id/drawer_my_order"
+            android:checked="false"
+            android:icon="@drawable/ic_action_tracking"
+            android:title="@string/menu_my_orders" />
+        <item
+            android:id="@+id/drawer_my_rewards"
+            android:checked="false"
+            android:icon="@drawable/ic_action_medal"
+            android:title="@string/menu_my_rewards" />
+
+        <item
+            android:id="@+id/drawer_my_cart"
+            android:checked="false"
+            android:icon="@drawable/ic_action_shopping_bag"
+            android:title="@string/menu_my_cart" />
+
+        <item
+            android:id="@+id/drawer_my_wishlist"
+            android:checked="false"
+            android:icon="@drawable/ic_action_heart"
+            android:title="@string/menu_my_wish_list" />
+
+        <item
+            android:id="@+id/drawer_account"
+            android:checked="false"
+            android:icon="@drawable/ic_action_account"
+            android:title="@string/menu_my_account" />
+
+        <item
+            android:id="@+id/drawer_measurements"
+            android:checked="false"
+            android:icon="@drawable/ic_action_measure"
+            android:title="My Measurements" />
+
+    </group>
+    <group android:id="@+id/grp2" android:checkableBehavior="single" >
+
+
+        <item
+            android:id="@+id/drawer_faqs"
+            android:checked="false"
+            android:icon="@drawable/ic_action_help"
+            android:title="@string/menu_faqs" />
+
+        <item
+            android:id="@+id/drawer_contacts"
+            android:checked="false"
+            android:icon="@drawable/ic_action_contacts"
+            android:title="@string/menu_contacts" />
+
+        <item
+            android:id="@+id/drawer_live_chat"
+            android:checked="false"
+            android:icon="@drawable/ic_action_chat"
+            android:title="@string/menu_live_chat" />
+
+        <item
+            android:id="@+id/drawer_logout"
+            android:checked="false"
+            android:icon="@drawable/ic_action_logout"
+            android:title="@string/logout" />
+
+
+    </group>
+</menu>

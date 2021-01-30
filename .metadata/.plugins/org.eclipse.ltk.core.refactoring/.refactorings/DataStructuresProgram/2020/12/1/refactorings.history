@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;postion&apos; in &apos;com.ds.sorting.InsertionsortDemo.insertionSort(...)&apos; to &apos;position&apos;&#x0D;&#x0A;- Original project: &apos;DataStructuresProgram&apos;&#x0D;&#x0A;- Original element: &apos;com.ds.sorting.InsertionsortDemo.insertionSort(int[]).postion&apos;&#x0D;&#x0A;- Renamed element: &apos;postion&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;postion&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.ds.sorting{InsertionsortDemo.java[InsertionsortDemo~insertionSort~\[I@postion!228!243!232!238!I!0!false" name="position" references="true" stamp="1609227262166" version="1.0"/>
+</session>

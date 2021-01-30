@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="40dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/size_select"
+    android:layout_margin="5dp"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    app:cardElevation="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/size_measure"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/button_shape_alphabet"
+        android:text="S"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/count_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_product_size"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="3 left"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/dotHighlight"
+        android:textSize="12sp"/>
+</LinearLayout>

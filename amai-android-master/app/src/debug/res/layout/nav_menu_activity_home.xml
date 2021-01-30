@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorHighLightY"
+    android:scrollbarSize="5dp"
+    android:scrollbarThumbVertical="@color/colorLowLightY">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_nav_menu_women"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_grey"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:focusable="false"
+                android:padding="4dp"
+                android:src="@drawable/image_cloth_women"
+                android:tint="@color/colorMediumDarkX" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="@string/menu_women"
+                android:textColor="@color/colorLowDarkX"
+                android:textSize="@dimen/nav_menu_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_nav_menu_men"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_grey"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:focusable="false"
+                android:padding="4dp"
+                android:src="@drawable/image_cloth_men"
+                android:tint="@color/colorMediumDarkX" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="@string/menu_men"
+                android:textColor="@color/colorLowDarkX"
+                android:textSize="@dimen/nav_menu_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_nav_menu_kids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_grey"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:focusable="false"
+                android:padding="4dp"
+                android:src="@drawable/image_cloth_kids"
+                android:tint="@color/colorMediumDarkX" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="@string/menu_kids"
+                android:textColor="@color/colorLowDarkX"
+                android:textSize="@dimen/nav_menu_text" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/colorLowLightX" />
+
+        <LinearLayout
+            android:id="@+id/layout_nav_menu_designs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_grey"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:focusable="false"
+                android:padding="4dp"
+                android:src="@drawable/image_cloth_women"
+                android:tint="@color/colorMediumDarkX" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="@string/menu_my_designs"
+                android:textColor="@color/colorLowDarkX"
+                android:textSize="@dimen/nav_menu_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_nav_menu_appointments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_grey"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:focusable="false"
+                android:padding="4dp"
+                android:src="@drawable/image_cloth_women"
+                android:tint="@color/colorMediumDarkX" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="@string/menu_my_appointments"
+                android:textColor="@color/colorLowDarkX"
+                android:textSize="@dimen/nav_menu_text" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_nav_menu_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_grey"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:focusable="false"
+                android:padding="4dp"
+                android:src="@drawable/image_cloth_women"
+                android:tint="@color/colorMediumDarkX" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="@string/menu_my_orders"
+                android:textColor="@color/colorLowDarkX"
+                android:textSize="@dimen/nav_menu_text" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_nav_menu_rewards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_grey"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:focusable="false"
+                android:padding="4dp"
+                android:src="@drawable/image_cloth_women"
+                android:tint="@color/colorMediumDarkX" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="@string/menu_my_rewards"
+                android:textColor="@color/colorLowDarkX"
+                android:textSize="@dimen/nav_menu_text" />
+
+        </LinearLayout>
+
+        v
+        v
+
+        <LinearLayout
+            android:id="@+id/layout_nav_menu_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_grey"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:focusable="false"
+                android:padding="4dp"
+                android:src="@drawable/image_cloth_women"
+                android:tint="@color/colorMediumDarkX" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="@string/menu_my_cart"
+                android:textColor="@color/colorLowDarkX"
+                android:textSize="@dimen/nav_menu_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_nav_menu_wish_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_grey"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:focusable="false"
+                android:padding="4dp"
+                android:src="@drawable/image_cloth_women"
+                android:tint="@color/colorMediumDarkX" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="@string/menu_my_wish_list"
+                android:textColor="@color/colorLowDarkX"
+                android:textSize="@dimen/nav_menu_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_nav_menu_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_grey"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:focusable="false"
+                android:padding="4dp"
+                android:src="@drawable/image_cloth_women"
+                android:tint="@color/colorMediumDarkX" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="@string/menu_my_account"
+                android:textColor="@color/colorLowDarkX"
+                android:textSize="@dimen/nav_menu_text" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/colorLowLightX" />
+
+        <LinearLayout
+            android:id="@+id/layout_nav_menu_faqs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_grey"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:focusable="false"
+                android:padding="4dp"
+                android:src="@drawable/image_cloth_women"
+                android:tint="@color/colorMediumDarkX" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="@string/menu_faqs"
+                android:textColor="@color/colorLowDarkX"
+                android:textSize="@dimen/nav_menu_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_nav_menu_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_grey"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:focusable="false"
+                android:padding="4dp"
+                android:src="@drawable/image_cloth_women"
+                android:tint="@color/colorMediumDarkX" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="@string/menu_contacts"
+                android:textColor="@color/colorLowDarkX"
+                android:textSize="@dimen/nav_menu_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_nav_menu_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_grey"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:focusable="false"
+                android:padding="4dp"
+                android:src="@drawable/image_cloth_women"
+                android:tint="@color/colorMediumDarkX" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="@string/menu_more"
+                android:textColor="@color/colorLowDarkX"
+                android:textSize="@dimen/nav_menu_text" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/colorLowLightX" />
+
+        <LinearLayout
+            android:id="@+id/layout_nav_menu_live_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_white_grey"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:focusable="false"
+                android:padding="4dp"
+                android:src="@drawable/image_cloth_women"
+                android:tint="@color/colorMediumDarkX" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:paddingLeft="16dp"
+                android:text="@string/menu_live_chat"
+                android:textColor="@color/colorLowDarkX"
+                android:textSize="@dimen/nav_menu_text" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,15 @@
+{
+  "jwt_secret": "JWT_SECRET",
+  "app_test_url": "APP_TEST_URL",
+  "app_dev_url":"APP_DEV_URL",
+  "image_upload_path":"IMAGE_UPLOAD_PATH",
+
+  "aws_secret_access": "AWS_SECRET_ACCESS",
+  "aws_access_key": "AWS_ACCESS_KEY",
+  "bucket":"BUCKET",
+  "region": "REGION",
+  "sendgrid_api_key": "SENDGRID_API_KEY",
+  "sms_api_key":"SMS_API_KEY",
+  "app_url" : "APP_URL",
+  "web_url" : "WEB_URL"
+}

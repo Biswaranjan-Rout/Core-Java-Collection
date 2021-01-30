@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="10dp"
+android:layout_margin="1dp"
+android:elevation="8dp"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/select_design_back" >
+
+    <ImageView
+        android:id="@+id/img_product_our_design"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_product_name_our_design"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="ABCD"
+        android:layout_below="@+id/img_product_our_design"
+        android:layout_marginStart="10dp"
+        android:gravity="start"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="@color/colorGrey" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_product_des_our_design"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="ABCD"
+        android:layout_below="@+id/tv_product_name_our_design"
+        android:layout_marginStart="10dp"
+        android:gravity="start"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textColor="@color/colorGrey" />
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_product_des_our_design"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:id="@+id/tv_net_price_our_design"
+            android:layout_height="wrap_content"
+            android:text="\u20B91600"
+            android:layout_marginStart="10dp"
+            android:gravity="start"
+            android:layout_marginEnd="2dp"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorGrey" />
+        <FrameLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_marginStart="2dp"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="18dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorBlack"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_price"
+                android:text="\u20B92500"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:textSize="10sp"
+                android:textColor="@color/colorGrey"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:id="@+id/tv_discount_our_design"
+                android:textColor="@color/buttonColor"
+                android:text="(50%OFF)"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/img_product_our_design"
+        android:id="@+id/like_button_back_our_design"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@+id/add_to_wishlist_our_design"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_product_our_design"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ripple_icons"
+            android:src="@drawable/icon_heart" />
+
+    </FrameLayout>
+
+
+
+
+
+    <ImageView
+        android:id="@+id/select_design_icon"
+        android:src="@drawable/tick"
+        android:layout_width="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="30dp"
+        android:scaleType="fitXY"/>
+
+
+</RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

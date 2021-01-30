@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize">
+
+    <TextView
+        android:id="@+id/tv_title_filter"
+        android:text="@string/title_activity_filters"
+        android:textColor="@color/colorMediumDarkX"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="@dimen/app_bar_title"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_clear_all"
+        android:text="@string/clear_all"
+        android:textColor="@color/colorPink"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:textAllCaps="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

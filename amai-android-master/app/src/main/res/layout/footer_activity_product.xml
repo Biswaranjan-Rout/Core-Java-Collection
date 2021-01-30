@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/product_bottom_cardview"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioGroup
+            android:visibility="gone"
+            android:id="@+id/radio_group_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp">
+            <RadioButton
+                android:id="@+id/radio_btn_book_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorLowLightX"
+                android:text="Would you like to receive a call back form our professional."
+                android:textColor="@color/colorPink"
+                android:textSize="12dp"
+                android:textStyle="italic" />
+            <RadioButton
+                android:id="@+id/radio_btn_book_appointment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorLowLightX"
+                android:text="Would you like our designers to visit your location."
+                android:textColor="@color/colorPink"
+                android:textSize="12dp"
+                android:textStyle="italic" />
+        </RadioGroup>
+        <LinearLayout
+            android:id="@+id/layout_banner_select"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:background="@drawable/banner_gradient"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/tap"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:text="Select Design "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:layout_gravity="center"/>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/agenda"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:text="Book Appointment "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/like"/>
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:text="Confirm Design"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/confirm"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/tv_book_appointment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:text="Place Order"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:layout_margin="5dp"
+          android:background="@drawable/selector_primary_grey"
+          android:elevation="6dp"
+          app:cardCornerRadius="8dp">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/selector_primary_grey"
+              android:orientation="horizontal">
+
+              <LinearLayout
+                  android:id="@+id/layout_proceed_with_measurement"
+                  android:layout_width="0dp"
+                  android:layout_height="48dp"
+                  android:gravity="center"
+                  android:background="@drawable/button_gradient"
+                  android:layout_weight="1">
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:textStyle="bold"
+                      android:background="@drawable/button_gradient"
+                      android:text="Proceed with existing measurements "
+                      android:textColor="@color/colorWhite"
+                      android:textSize="14sp" />
+              </LinearLayout>
+              <View
+                  android:layout_width="1dp"
+                  android:layout_height="match_parent"
+                  android:layout_marginLeft="1dp"
+                  android:layout_marginTop="6dp"
+                  android:layout_marginRight="1dp"
+                  android:layout_marginBottom="6dp"
+                  android:background="@color/colorPrimaryDark" />
+              <LinearLayout
+                  android:id="@+id/layout_book_appointment"
+                  android:layout_width="0dp"
+                  android:layout_height="48dp"
+                  android:gravity="center"
+                  android:background="@drawable/button_gradient"
+                  android:layout_weight="1">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:textStyle="bold"
+                      android:text="Book an appointment"
+                      android:textColor="@color/colorWhite"
+                      android:textSize="14sp" />
+              </LinearLayout>
+          </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

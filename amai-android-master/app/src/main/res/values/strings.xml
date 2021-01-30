@@ -1,0 +1,195 @@
+<resources>
+    <string name="app_name">AMAINEW </string>
+
+    <string name="glide_placeholder">R.drawable.image_boutique</string>
+
+
+    <string name="merchant_id">YnjFsd91872496617667</string>
+
+
+    Test Merchant ID
+    YnjFsd91872496617667
+    Test Merchant Key
+    MpRQerwvW@vkCkJX
+    Website
+    WEBSTAGING
+    Industry Type
+    Retail
+    Channel ID (For Website)
+    WEB
+    Channel ID (For Mobile Apps)
+    WAP
+    Transaction URL
+
+    Transaction Status URL
+
+
+    @SerializedName("MID")
+    String mId;
+
+    @SerializedName("ORDER_ID")
+    String orderId;
+
+    @SerializedName("CUST_ID")
+    String custId;
+
+    @SerializedName("CHANNEL_ID")
+    String channelId;
+
+    @SerializedName("TXN_AMOUNT")
+    String txnAmount;
+
+    @SerializedName("WEBSITE")
+    String website;
+
+    @SerializedName("CALLBACK_URL")
+    String callBackUrl;
+
+    @SerializedName("INDUSTRY_TYPE_ID")
+    String industryTypeId;
+
+
+
+    <string name="no_geocoder_available">No geocoder available</string>
+
+    <string name="fetch_address">Fetch address</string>
+
+    <string name="address_found">Address found</string>
+
+    <string name="no_address_found">Sorry, no address found</string>
+    <string name="no_location_data_provided">No location data provided</string>
+    <string name="service_not_available">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+
+
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="settings">Settings</string>
+
+    <!--Strings MerchantActivity-->
+    <string name="title_activity_personalize">Personalize</string>
+    <string name="tab_text_1">Boutiques</string>
+    <string name="tab_text_2">Designers</string>
+    <string name="tab_text_3">Design House</string>
+    <string name="gender">Gender</string>
+    <string name="select_gender">Select Gender -</string>
+    <string name="male">Male Only</string>
+    <string name="female">Female Only</string>
+    <string name="sort">Sort</string>
+    <string name="openDrawer">Navigation View Closed</string>
+    <string name="closeDrawer">Navigation View</string>
+
+    <string name="sort_by">Sort By -</string>
+    <string name="price_high_to_low">Price - High To Low</string>
+    <string name="price_low_to_high">Price - Low To High</string>
+    <string name="popularity">Popularity</string>
+    <string name="delivery_time">Delivery Time</string>
+    <string name="filter">filter</string>
+
+    <!--Strings ActivityFilters-->
+    <string name="title_activity_filters">Filters</string>
+    <string name="clear_all">Clear All</string>
+    <string name="close">Close</string>
+    <string name="apply">Apply</string>
+
+    <string-array name="filter_options_list">
+        <item>Categories</item>
+        <item>Designers with Crow</item>
+        <item>Brand Name</item>
+        <item>Price Range</item>
+        <item>Discount</item>
+    </string-array>
+    <string-array name="filters_option_categories">
+        <item>Personal</item>
+        <item>Marriage Event</item>
+        <item>Corporate Event</item>
+    </string-array>
+    <string-array name="filters_categories_personal">
+        <item>King</item>
+        <item>Queen</item>
+    </string-array>
+    <string-array name="filters_categories_personal_king">
+        <item>Personal</item>
+        <item>Marriage Event</item>
+        <item>Corporate Event</item>
+    </string-array>
+
+    <!--Strings ActivityHome-->
+    <string name="title_activity_home">AMAI</string>
+    <string name="nav_header_title">User Name</string>
+    <string name="menu_women">Women</string>
+    <string name="menu_men">Men</string>
+    <string name="menu_kids">Kids</string>
+    <string name="menu_my_designs">My Designs</string>
+    <string name="menu_my_appointments">My Appointments</string>
+    <string name="menu_my_orders">My Orders</string>
+    <string name="menu_my_rewards">My Rewards</string>
+    <string name="menu_my_cart">My Cart</string>
+    <string name="menu_my_wish_list">My Wishlist</string>
+    <string name="menu_my_account">My Account</string>
+    <string name="menu_faqs">FAQs</string>
+    <string name="menu_contacts">Contacts</string>
+    <string name="menu_more">More</string>
+    <string name="menu_live_chat">Live Chat</string>
+    <string name="design_your_outfits">Design Your Outfits</string>
+    <string name="use_this_service">Use this service to book appointment</string>
+    <string name="our_design">Our Designs</string>
+    <string name="handpicked_handicrafts">Handpicked Handicrafts</string>
+
+    <!--Strings ActivityProfile-->
+    <string name="logout">Logout</string>
+    <string name="logout_alert">Are you sure you want to logout?</string>
+    <string-array name="profile_options_list">
+        <item>My Orders</item>
+        <item>Help Centre</item>
+        <item>Wishlist</item>
+        <item>My favourite</item>
+        <item>Address</item>
+        <item>Coupons</item>
+        <item>Profile Details</item>
+        <item>Settings</item>
+    </string-array>
+
+    <!--Strings ActivityFeeds-->
+    <string name="title_activity_feeds">AMAI Fashion Feeds</string>
+    <string name="your_fashion_crafts">Your Fashion Crafts</string>
+    <string name="home">Home</string>
+    <string name="cult">Cult</string>
+    <string name="leader_board">Leadings</string>
+    <string name="comment">Comment</string>
+    <string name="share">Share</string>
+
+    <!--Strings ProductDetailsActivity-->
+    <string name="title_activity_designer_details">Designer Details</string>
+    <string name="wish_list">Wishlist</string>
+    <string name="book_appointment">Book Appointment</string>
+
+    <!--Strings ActivitySchedule-->
+    <string name="title_activity_select_time">Select The Available Slot</string>
+    <string name="select_date_text">When would you like to receive call back form our Professionals?</string>
+    <string name="select_time_text">Select your available slot!</string>
+    <string name="call_me_aspa">Call me ASAP</string>
+    <string name="book_now">Book Now</string>
+    <string name="success">Succeed!</string>
+    <string name="success_text">Appointment booked successfully!\n You will receive a call as per your scheduled time.</string>
+    <string name="success_cancelled">Appointment Cancelled successfully!\n</string>
+    <string name="check_call_details"><u>Check your scheduled Call details!</u></string>
+
+    <!--Strings ActivitySelectAddress-->
+    <string name="title_activity_select_address">Select Your Address</string>
+    <string name="save_as">Save As :</string>
+    <string name="home_">Home</string>
+    <string name="office_">Office</string>
+    <string name="other_">Other</string>
+    <string name="add_address">Add Address ></string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string-array name="gender_array">
+        <item>Mr.</item>
+        <item>Ms.</item>
+    </string-array>
+
+    <string name="price"><strike>₹ 2000</strike></string>
+
+
+</resources>

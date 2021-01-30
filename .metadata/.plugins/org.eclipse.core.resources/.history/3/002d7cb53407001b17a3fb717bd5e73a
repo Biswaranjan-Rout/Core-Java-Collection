@@ -1,0 +1,38 @@
+$(document).ready(function () {
+  $('#dtBasicExample').DataTable();
+  $('.dataTables_length').addClass('bs-select');
+});
+
+function getPendingAppointments(){
+	
+}
+
+loadPendingApntData(pendingApntData);
+
+function loadPendingApntData(pendingApntData){
+	
+	const tableBody = document.getElementById('pendingApntmtTbody_id');
+	let dataHtml = '';
+	
+	for(let pData of pendingApntData){
+		dataHtml +=   '   <tr>  '  + 
+		 ' <th scope="row">1</th>  '  + 
+		 ' <td>${pendingApntData.apnt_id}</td>  '  + 
+		 ' <td>${pendingApntData.date}</td>  '  + 
+		 ' <td>${pendingApntData.customer_name}</td>  '  + 
+		 ' <td>${pendingApntData.gender}</td>  '  + 
+		 ' <td>${pendingApntData.addressLine1}</td>  '  + 
+		 ' <td>${pendingApntData.mobile</td>  '  + 
+		 ' <td>${pendingApntData.order_id}</td>  '  + 
+		 ' <td>  '  + 
+		 '  <button type="button" class="btn btn-outline-primary btn-sm m-0 waves-effect" style="background-color: lightseagreen;">Update Measurement</button>  '  + 
+		 ' </td>  '  + 
+		 '  '  + 
+		 ' </tr>  ' ;  
+		
+		
+		
+	}
+	
+	 
+}

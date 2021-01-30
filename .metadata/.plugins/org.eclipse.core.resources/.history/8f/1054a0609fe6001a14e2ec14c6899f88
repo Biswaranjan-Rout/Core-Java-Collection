@@ -1,0 +1,10 @@
+package com.myApp.photoAppApiUsers.Service;
+
+import org.springframework.stereotype.Service;
+
+import com.myApp.photoAppApiUsers.Dto.UserDto;
+
+@Service
+public interface UserService {
+	public String createUser(UserDto userDto);
+}

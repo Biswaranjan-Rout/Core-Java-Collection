@@ -1,0 +1,95 @@
+$(document).ready(function(){
+
+});
+
+$("button").click(function(){
+    $("p").slideToggle();
+  });
+
+function getPendingAppointments(){
+	$.ajax({
+		url: "demo_test.txt",
+		async: false,
+		type: "GET",
+		dataType:"text",
+		success: function(result){
+	     
+	    },
+		error : function(response) {
+			console.log('-----Validation failed: '+response+'-----');
+			swal({
+				title : "Error",
+				text : "Authentication failed",
+				type : "error",
+				showCancelButton : true,
+				closeOnConfirm : true
+			});
+		}
+	});
+}
+
+function getNewAppointments(){
+	$.ajax({
+		url: "demo_test.txt",
+		async: false,
+		type: "GET",
+		dataType:"text",
+		success: function(result){
+	     
+	    },
+		error : function(response) {
+			console.log('-----Validation failed: '+response+'-----');
+			swal({
+				title : "Error",
+				text : "Authentication failed",
+				type : "error",
+				showCancelButton : true,
+				closeOnConfirm : true
+			});
+		}
+	});
+}
+
+function getCompletedAppointments(){
+	$.ajax({
+		url: "demo_test.txt",
+		async: false,
+		type: "GET",
+		dataType:"text",
+		success: function(result){
+	     
+	    },
+		error : function(response) {
+			console.log('-----Validation failed: '+response+'-----');
+			swal({
+				title : "Error",
+				text : "Authentication failed",
+				type : "error",
+				showCancelButton : true,
+				closeOnConfirm : true
+			});
+		}
+	});
+}
+
+function getCancelledAppointments(){
+	$.ajax({
+		url: "demo_test.txt",
+		async: false,
+		type: "GET",
+		dataType:"text",
+		success: function(result){
+	     
+	    },
+		error : function(response) {
+			console.log('-----Validation failed: '+response+'-----');
+			swal({
+				title : "Error",
+				text : "Authentication failed",
+				type : "error",
+				showCancelButton : true,
+				closeOnConfirm : true
+			});
+		}
+	});
+}

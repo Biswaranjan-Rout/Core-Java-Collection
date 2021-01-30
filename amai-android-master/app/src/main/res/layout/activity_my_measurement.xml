@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MyMeasurementDetailsActivity">
+    <include
+        layout="@layout/include_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/include_toolbar"
+        android:layout_marginBottom="50dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layout_main_measurement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Bust Round"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/bust_round"
+                    android:background="@drawable/box_shape"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Waist Round"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/waist_round"
+                    android:background="@drawable/box_shape"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="High hip Round"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/high_hip_round"
+                    android:background="@drawable/box_shape"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Hip Round"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/hip_round"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/box_shape"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Distance from nape to waist"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/nape_to_waist"
+                    android:background="@drawable/box_shape"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Armhale Depth"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/armhale_depth"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/box_shape"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Shoulder length"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:inputType="numberDecimal"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/shoulder_length"
+                    android:background="@drawable/box_shape"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Shoulder paint to paint "
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/should_paint_to_paint"
+                    android:background="@drawable/box_shape"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Bicep Round"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/bicept_round"
+                    android:background="@drawable/box_shape"
+                    android:layout_height="match_parent" />
+            </LinearLayout> <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Elbow  Round"
+                android:textSize="14sp"
+                android:textColor="@color/colorBlack"
+                android:layout_height="match_parent" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/elbow_round"
+                android:inputType="numberDecimal"
+                android:background="@drawable/box_shape"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Wrist  Round"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/wrist_round"
+                    android:background="@drawable/box_shape"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Height "
+                    android:textSize="14sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="match_parent" />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/height"
+                    android:gravity="center"
+                    android:background="@drawable/box_shape"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <include
+        layout="@layout/footer_activity_my_measurement"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true" />
+
+    <FrameLayout
+        android:id="@+id/my_measure_progressbar"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:background="@color/transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="70dp"
+            android:text="Loading"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+    </FrameLayout>
+
+</RelativeLayout>

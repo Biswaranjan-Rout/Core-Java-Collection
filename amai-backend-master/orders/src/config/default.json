@@ -1,0 +1,20 @@
+{
+    "_COMMENT1":"MICROSERVICES URL",
+    "PRODUCT_SERVICE" :"http://products:3000/api/v1/",
+    "PRODUCT_SERVICE_" :"http://ec2-3-136-240-99.us-east-2.compute.amazonaws.com:4002/api/v1/",
+  
+    "_COMMENT2":"PRODUCT CONSTANTS",
+    "DEFAULT_SIZE":"l",
+    "APPROVED":1,
+    "UNAPPROVED":0,
+    "ACTIVE":1,
+    "INACTIVE":0,
+    "OUT_OF_STOCK":2,
+    "DELETED":1,
+    "NOT_DELETED":0,
+    "PERSONALIZE":1,
+    "READYMADE":2,
+    "QC_FAILED":0,
+    "QC_PENDING":1,
+    "QC_VERIFIED":2
+  }

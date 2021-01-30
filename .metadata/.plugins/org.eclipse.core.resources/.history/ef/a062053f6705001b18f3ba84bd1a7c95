@@ -1,0 +1,24 @@
+$(document).ready(function () {
+  $('#dtBasicExample').DataTable();
+  $('.dataTables_length').addClass('bs-select');
+});
+
+function getPendingAppointments(){
+	
+}
+
+function addTableRow(){
+	 var myName = document.getElementById("name");
+	 var age = document.getElementById("age");
+	 var tabl = document.getElementById("myTableData");
+	 
+	 var rowCount = tabl.rows.length;
+	 var row = tabl.insertRow(rowCount);
+	 
+	 row.insertCell(0).innerHTML= '<input type="button" value = "Delete" onClick="Javacsript:deleteRow(this)">';
+	 row.insertCell(1).innerHTML= myName.value;
+	 row.insertCell(2).innerHTML= age.value;
+	 
+	 //-------------------
+	 var table = document.getElementById("pendingApntmtTable_id");
+}

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_bottom_sheet_sort"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorHighLightY"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorMediumLightY"
+        android:elevation="0.5dp">
+        <TextView
+            android:id="@+id/tv_sort_by"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/sort_by"
+            android:textColor="@color/colorLowDarkX"
+            android:textSize="18dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearlayout_popular"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/popularity"
+            android:textColor="@color/colorLowDarkX"
+            android:textSize="16dp" />
+        <RadioButton
+            android:id="@+id/radio_btn_popularity"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:buttonTint="@color/colorLowLightX" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearlayout_low_high"
+
+        android:paddingLeft="16dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/price_low_to_high"
+            android:textColor="@color/colorLowDarkX"
+            android:textSize="16dp" />
+        <RadioButton
+            android:id="@+id/radio_btn_low_to_high"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:buttonTint="@color/colorLowLightX" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearlayout_high_low"
+
+        android:orientation="horizontal"
+        android:paddingLeft="16dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/price_high_to_low"
+            android:textColor="@color/colorLowDarkX"
+            android:textSize="16dp" />
+        <RadioButton
+            android:id="@+id/radio_btn_high_to_low"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:buttonTint="@color/colorLowLightX" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearlayout_newest"
+
+        android:paddingLeft="16dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Newest first"
+            android:textColor="@color/colorLowDarkX"
+            android:textSize="16dp" />
+        <RadioButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/radio_btn_newest_first"
+            android:buttonTint="@color/colorLowLightX" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearlayout_nearBy"
+
+        android:orientation="horizontal"
+        android:paddingLeft="16dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Near by"
+            android:textColor="@color/colorLowDarkX"
+            android:textSize="16dp" />
+        <RadioButton
+            android:layout_width="48dp"
+            android:id="@+id/radio_btn_nearby"
+
+            android:layout_height="48dp"
+            android:buttonTint="@color/colorLowLightX" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:layout_height="wrap_content">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical">
+     <include
+             android:id="@+id/layout_forgot_screen"
+         android:visibility="gone"
+         layout="@layout/activity_forgot_pass"
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"/>
+     <include
+         android:id="@+id/layout_register_screen"
+         android:visibility="gone"
+         layout="@layout/layout_register_screen"
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent" />
+     <include
+         android:id="@+id/layout_login_screen"
+         layout="@layout/layout_login_screen"
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent" />
+ </LinearLayout>
+
+
+
+</ScrollView>
+
+    <FrameLayout
+        android:id="@+id/auth_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="70dp"
+            android:text="Loading"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:text="Please Wait..."
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+    </FrameLayout>
+
+</RelativeLayout>

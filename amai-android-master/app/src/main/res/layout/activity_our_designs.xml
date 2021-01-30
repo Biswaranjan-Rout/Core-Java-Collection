@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ActivityOurDesigns">
+
+    <include
+        layout="@layout/include_toolbar" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_menu_top_our_designs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/include_toolbar"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_below="@+id/include_toolbar"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:padding="4dp" />
+
+    <include
+        layout="@layout/body_activity_home"
+        android:layout_marginTop="60dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_menu_top_our_designs"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/include_toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_below="@+id/include_toolbar"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/our_design_recyclerview" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

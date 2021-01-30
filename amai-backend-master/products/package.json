@@ -1,0 +1,31 @@
+{
+  "name": "products",
+  "version": "1.0.0",
+  "description": "A microservice to manage Products",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon -L server.js"
+  },
+  "author": "Sujeet Agrahari",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^16.1.5",
+    "aws-sdk": "^2.563.0",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "logform": "^2.1.2",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "mysql2": "^1.7.0",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^1.19.3",
+    "sequelize": "^5.19.2",
+    "winston": "^3.2.1"
+  }
+}

@@ -1,0 +1,23 @@
+$(document).ready(function(){
+
+});
+
+$("button").click(function(){
+    $("p").slideToggle();
+  });
+
+function getPendingAppointments(){
+	
+}
+
+function getNewAppointments(){
+	
+}
+
+function getCompletedAppointments(){
+	
+}
+
+function getCancelledAppointments(){
+	
+}

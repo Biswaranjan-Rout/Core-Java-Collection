@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.thread.ReorderingExample&apos; to &apos;Demonstration&apos;&#x0D;&#x0A;- Original project: &apos;JavaMultiThreading&apos;&#x0D;&#x0A;- Original element: &apos;com.thread.ReorderingExample&apos;&#x0D;&#x0A;- Renamed element: &apos;com.thread.Demonstration&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ReorderingExample&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.thread{ReorderingExample.java[ReorderingExample" matchStrategy="1" name="Demonstration" qualified="false" references="true" similarDeclarations="false" stamp="1610725679059" textual="false" version="1.0"/>
+</session>

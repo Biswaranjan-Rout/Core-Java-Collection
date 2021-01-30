@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_action_heart"
+        android:drawableStart="@drawable/ic_action_heart"
+        android:text="action_share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/ActionItem"
+
+        />
+    <TextView
+        android:id="@+id/textView2"
+        android:drawableLeft="@drawable/ic_action_heart"
+        android:drawableStart="@drawable/ic_action_heart"
+        android:text="action_upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        style="@style/ActionItem"
+        />
+    <TextView
+        android:id="@+id/textView3"
+        android:drawableLeft="@drawable/ic_action_heart"
+        android:drawableStart="@drawable/ic_action_heart"
+        android:text="action_copy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        style="@style/ActionItem"
+        />
+    <TextView
+        android:id="@+id/textView4"
+        android:drawableLeft="@drawable/ic_action_heart"
+        android:drawableStart="@drawable/ic_action_heart"
+        android:text="action_print"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        style="@style/ActionItem"
+        />
+
+</LinearLayout>

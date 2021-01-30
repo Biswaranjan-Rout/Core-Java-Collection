@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;n3&apos; in &apos;com.jaca.basics.FibonacciSeries.printFibonacci(...)&apos; to &apos;sum&apos;&#x0D;&#x0A;- Original project: &apos;CoreJavaBasics&apos;&#x0D;&#x0A;- Original element: &apos;com.jaca.basics.FibonacciSeries.printFibonacci(int).n3&apos;&#x0D;&#x0A;- Renamed element: &apos;n3&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;n3&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.jaca.basics{FibonacciSeries.java[FibonacciSeries~printFibonacci~I@n3!172!182!176!177!I!0!false" name="sum" references="true" stamp="1609868773694" version="1.0"/>
+</session>

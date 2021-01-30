@@ -1,0 +1,14 @@
+$(document).ready(function () {
+  $('#dtBasicExample').DataTable();
+  $('.dataTables_length').addClass('bs-select');
+});
+
+function getPendingAppointments(){
+	
+}
+
+function loadPendingApntData(data){
+	
+	const tableBody = document.getElementById('pendingApntmtTbody_id');
+	 
+}

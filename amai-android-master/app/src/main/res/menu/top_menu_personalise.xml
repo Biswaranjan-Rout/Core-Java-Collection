@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/notify_nav"
+        android:title="Send"
+        android:icon="@drawable/ic_action_notifications_none"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/like_nav"
+        android:title="Send"
+        android:icon="@drawable/ic_action_heart"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/shopping_nav"
+        android:title="Send"
+        android:icon="@drawable/ic_action_shopping_bag"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,18 @@
+
+#server.port =${PORT:8081}
+server.port =${PORT:0}
+server.session.timeout = 15000
+spring.mvc.view.prefix = /WEB-INF/view/
+#spring.mvc.view.suffix = .jsp
+spring.mvc.view.suffix= .html
+#server.servlet.contextPath=/cognitive
+server.servlet.contextPath=/agentDashboard
+#server.contextPath=/agentDashboard
+spring.http.multipart.max-file-size=500MB
+spring.http.multipart.max-request-size=600MB
+welcome.message: Hello Biswa
+
+
+
+logging.level.org.springframework=TRACE
+logging.level.com=TRACE

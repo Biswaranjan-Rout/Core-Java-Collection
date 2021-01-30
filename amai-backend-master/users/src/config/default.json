@@ -1,0 +1,24 @@
+{
+  "_COMMENT1":"ROLE CONSTANTS",
+      "ADMIN" : "admin",
+      "USER" : "user",
+
+  "_COMMENT2":"USER CONSTANTS",
+      "ACTIVE" :1,
+      "INACTIVE" :0,
+      "APPROVED" :1,
+      "REJECTED":0,
+      "PERSONALIZE":1,
+      "READYMADE":2,
+      "DEFAULT_PROFILE":"https://amaifilestorage123.s3.amazonaws.com/3c8b7481d3846f6201e88379d3701b5f",
+      
+  "_COMMENT3":"APPOINTMENT STATUS CONSTANTS",
+      "BOOKED":1,
+      "RESCHEDULED":2,
+      "CANCELLED":3,
+      "COMPLETED":4,
+
+  "_COMMENT4":"MICROSERVICES URL",
+      "PRODUCT_SERVICE" :"http://products:3000/api/v1/",
+      "PRODUCT_SERVICE_" :"http://ec2-3-136-240-99.us-east-2.compute.amazonaws.com:4002/api/v1/"
+}
